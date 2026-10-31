@@ -1,0 +1,52 @@
+WEBVTT
+
+00:00:03.120 --> 00:00:14.400
+<v Suzanne (Internal Audit)>Thanks everyone for joining. This is the kick-off for the 2026 Core Banking System audit. Scope is access management, change management and interest rate parameters, period January to September 2026.
+
+00:00:15.000 --> 00:00:24.800
+<v Khalid Darwish (Head of Core Banking Ops)>Good. Just so you know, we migrated the deployment pipeline in July, so the deployment log format changed mid-year.
+
+00:00:25.300 --> 00:00:33.900
+<v Suzanne (Internal Audit)>Noted. Can you confirm the log we get covers the full period, both the old and the new pipeline?
+
+00:00:34.200 --> 00:00:41.700
+<v Khalid Darwish (Head of Core Banking Ops)>Yes, IT Production Support merged them. Kiran can send the merged extract by Thursday.
+
+00:00:42.500 --> 00:00:55.100
+<v Priya Menon (IAM Lead)>On access, the leavers process is automated from the HR system since February. Before that it was email based, so January might be patchy.
+
+00:00:55.600 --> 00:01:04.000
+<v Suzanne (Internal Audit)>Understood. We'll test the full period anyway. Please send the HR leavers report and the CBS user list as at 30 September.
+
+00:01:04.500 --> 00:01:10.200
+<v Priya Menon (IAM Lead)>Sure, by 9 October. I'll also send the SoD exception register.
+
+00:01:11.000 --> 00:01:22.300
+<v Suzanne (Internal Audit)>Thanks. Who owns the batch service account on CBS? I saw a generic account in last year's list.
+
+00:01:22.900 --> 00:01:31.400
+<v Priya Menon (IAM Lead)>That's batchsvc01. It should be owned by IT Production Support. I'm not sure it's in the account register, I'll check.
+
+00:01:32.000 --> 00:01:44.600
+<v Marco Fernandes (Change Manager)>For change management, all CBS changes go through CAB in JIRA. Emergency changes get verbal approval from the CAB chair and a PIR afterwards.
+
+00:01:45.100 --> 00:01:52.300
+<v Suzanne (Internal Audit)>Is the PIR tracked in the JIRA ticket itself?
+
+00:01:52.800 --> 00:02:01.900
+<v Marco Fernandes (Change Manager)>Yes, there's a PIR completed date field. I'll export all CBSCHG tickets for the period, by 8 October.
+
+00:02:02.500 --> 00:02:15.000
+<v Suzanne (Internal Audit)>Great. Last area, interest parameters. Treasury Ops is not here today. I'll set up a separate walkthrough with them. Khalid, can you nominate a contact?
+
+00:02:15.600 --> 00:02:21.300
+<v Khalid Darwish (Head of Core Banking Ops)>Yes, I'll email you a name today.
+
+00:02:22.000 --> 00:02:33.800
+<v Suzanne (Internal Audit)>Agreed timeline: evidence by 9 October, fieldwork until 23 October, closing meeting around 30 October. We'll share draft findings before closing. Anything else?
+
+00:02:34.300 --> 00:02:38.100
+<v Marco Fernandes (Change Manager)>No, that's clear.
+
+00:02:38.600 --> 00:02:42.000
+<v Suzanne (Internal Audit)>Thanks all.

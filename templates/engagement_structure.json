@@ -1,0 +1,16 @@
+{
+  "_note": "Standard Internal Audit engagement folders. Edit to match your methodology. Folders are created in this order.",
+  "folders": [
+    "00_Admin",
+    "01_Planning/Risk_Assessment",
+    "01_Planning/Scoping_Memo",
+    "01_Planning/RCM",
+    "02_Fieldwork/Workpapers",
+    "02_Fieldwork/Evidence",
+    "03_Issues",
+    "04_Reporting",
+    "05_Meetings",
+    "_agent_scratch"
+  ],
+  "readme": "This engagement folder was created by the Virtual Auditor prototype. Files marked 'Prepared by: Virtual Auditor (AI)' are drafts until a human reviewer signs off."
+}

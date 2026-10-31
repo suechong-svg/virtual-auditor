@@ -1,0 +1,132 @@
+user_id,employee_id,user_name,department,account_status,created_date,disabled_date,last_login_date
+gsaleh1,E10001,Grace Saleh,Retail Operations,ACTIVE,2024-03-17,,2026-09-12
+mcosta2,E10002,Marco Costa,Finance,ACTIVE,2024-11-11,,2026-09-03
+ykapoor3,E10003,Yousef Kapoor,Payments Operations,ACTIVE,2023-12-05,,2026-09-30
+irao4,E10004,Imran Rao,Payments Operations,ACTIVE,2023-11-18,,2026-09-20
+lshah5,E10005,Layla Shah,Retail Operations,ACTIVE,2025-05-18,,2026-09-22
+amenon6,E10006,Aisha Menon,Finance,ACTIVE,2025-01-07,,2026-09-04
+yqasim7,E10007,Yousef Qasim,Retail Operations,DISABLED,2024-11-13,2026-03-21,2026-03-19
+anasser8,E10008,Arjun Nasser,Credit Operations,ACTIVE,2023-12-01,,2026-09-14
+ymansour9,E10009,Yousef Mansour,IT Production Support,ACTIVE,2024-12-14,,2026-09-13
+fhaddad10,E10010,Faisal Haddad,Treasury,DISABLED,2023-07-16,2026-07-08,2026-07-06
+hshah11,E10011,Hind Shah,Customer Service,ACTIVE,2024-11-11,,2026-09-14
+skapoor12,E10012,Sara Kapoor,Finance,ACTIVE,2024-11-24,,2026-09-13
+zdarwish13,E10013,Zainab Darwish,Payments Operations,ACTIVE,2023-06-28,,2026-09-24
+fkhoury14,E10014,Fatima Khoury,Payments Operations,ACTIVE,2024-08-05,,2026-09-20
+kpillai15,E10015,Karim Pillai,IT Production Support,ACTIVE,2024-02-20,,2026-09-10
+frahman16,E10016,Faisal Rahman,Compliance,ACTIVE,2025-05-03,,2026-09-18
+asaleh17,E10017,Arjun Saleh,Credit Operations,ACTIVE,2023-11-08,,2026-09-01
+frao18,E10018,Fatima Rao,IT Production Support,ACTIVE,2023-08-04,,2026-09-10
+alopez19,E10019,Anika Lopez,Customer Service,ACTIVE,2025-03-15,,2026-09-14
+lnasser20,E10020,Layla Nasser,Payments Operations,ACTIVE,2024-09-13,,2026-09-19
+oiyer21,E10021,Omar Iyer,IT Production Support,ACTIVE,2023-11-26,,2026-09-21
+fiyer22,E10022,Fatima Iyer,Payments Operations,ACTIVE,2024-03-28,,2026-09-15
+ncosta23,E10023,Noura Costa,Compliance,ACTIVE,2024-11-22,,2026-09-15
+gpillai24,E10024,Grace Pillai,Treasury,ACTIVE,2024-06-07,,2026-09-07
+mcosta25,E10025,Mariam Costa,Payments Operations,ACTIVE,2025-03-23,,2026-09-16
+tfarouk26,E10026,Tariq Farouk,Finance,ACTIVE,2025-03-26,,2026-09-29
+dmansour27,E10027,Daniel Mansour,Credit Operations,ACTIVE,2023-06-23,,2026-09-24
+srao28,E10028,Sara Rao,Finance,DISABLED,2024-06-11,2026-09-24,2026-09-22
+idarwish29,E10029,Imran Darwish,Retail Operations,ACTIVE,2024-10-10,,2026-09-22
+yrahman30,E10030,Yousef Rahman,Customer Service,ACTIVE,2023-12-10,,2026-09-20
+fnasser31,E10031,Fatima Nasser,Customer Service,ACTIVE,2025-04-18,,2026-09-03
+mfernand32,E10032,Mariam Fernandes,Credit Operations,ACTIVE,2023-08-29,,2026-09-25
+rmansour33,E10033,Rania Mansour,Treasury,ACTIVE,2023-11-14,,2026-09-22
+yrao34,E10034,Yousef Rao,IT Production Support,ACTIVE,2025-04-05,,2026-09-08
+mhamdan35,E10035,Marco Hamdan,Credit Operations,ACTIVE,2023-05-31,,2026-09-07
+rhamdan36,E10036,Rania Hamdan,Credit Operations,ACTIVE,2023-02-17,,2026-09-01
+kiyer37,E10037,Karim Iyer,Treasury,ACTIVE,2024-05-01,,2026-09-08
+rfernand38,E10038,Reem Fernandes,Payments Operations,ACTIVE,2025-05-20,,2026-09-20
+zrahman39,E10039,Zainab Rahman,Payments Operations,ACTIVE,2023-03-16,,2026-09-25
+pfarouk40,E10040,Priya Farouk,Credit Operations,ACTIVE,2024-02-29,,2026-09-15
+tmenon41,E10041,Tariq Menon,Credit Operations,DISABLED,2025-01-05,2026-09-01,2026-08-23
+nlopez42,E10042,Noura Lopez,Compliance,ACTIVE,2024-01-29,,2026-09-23
+rcosta43,E10043,Reem Costa,Retail Operations,ACTIVE,2024-02-14,,2026-09-16
+isaleh44,E10044,Imran Saleh,IT Production Support,ACTIVE,2023-06-01,,2026-09-08
+raziz45,E10045,Rahul Aziz,Credit Operations,ACTIVE,2024-12-05,,2026-09-21
+acosta46,E10046,Aisha Costa,Treasury,ACTIVE,2025-02-07,,2026-09-01
+rsaleh47,E10047,Reem Saleh,IT Production Support,ACTIVE,2025-02-27,,2026-09-28
+aqasim48,E10048,Anika Qasim,Finance,ACTIVE,2023-04-20,,2026-09-29
+ppillai49,E10049,Priya Pillai,Treasury,ACTIVE,2024-03-11,,2026-09-25
+aqasim50,E10050,Arjun Qasim,Retail Operations,DISABLED,2023-02-21,2026-07-15,2026-07-12
+tdarwish51,E10051,Tariq Darwish,Compliance,ACTIVE,2023-09-13,,2026-09-18
+asaleh52,E10052,Aisha Saleh,Customer Service,DISABLED,2023-05-17,2026-03-01,2026-02-26
+raziz53,E10053,Rania Aziz,Finance,ACTIVE,2024-04-20,,2026-09-26
+fmenon54,E10054,Fatima Menon,Compliance,ACTIVE,2024-06-27,,2026-09-22
+amenon55,E10055,Anika Menon,Treasury,ACTIVE,2024-09-01,,2026-09-18
+pfernand56,E10056,Priya Fernandes,Treasury,ACTIVE,2025-02-12,,2026-09-11
+sqasim57,E10057,Sara Qasim,Credit Operations,DISABLED,2025-04-30,2026-02-13,2026-02-10
+mrao58,E10058,Mariam Rao,Finance,DISABLED,2023-06-12,2026-04-24,2026-04-20
+haziz59,E10059,Hind Aziz,Credit Operations,DISABLED,2023-09-23,2026-05-06,2026-05-03
+ipillai60,E10060,Imran Pillai,Compliance,ACTIVE,2023-09-11,,2026-09-25
+rqasim61,E10061,Rania Qasim,Compliance,ACTIVE,2024-10-14,,2026-09-27
+riyer62,E10062,Rahul Iyer,Finance,ACTIVE,2025-02-23,,2026-09-09
+fdarwish63,E10063,Fatima Darwish,Retail Operations,ACTIVE,2024-06-17,,2026-09-25
+lrao64,E10064,Layla Rao,Finance,ACTIVE,2024-10-03,,2026-09-16
+liyer65,E10065,Layla Iyer,Retail Operations,ACTIVE,2023-10-09,,2026-09-08
+frahman66,E10066,Fatima Rahman,Finance,ACTIVE,2023-03-21,,2026-09-15
+kdarwish67,E10067,Khalid Darwish,Payments Operations,ACTIVE,2023-10-20,,2026-09-23
+riyer68,E10068,Reem Iyer,IT Production Support,ACTIVE,2023-10-06,,2026-09-08
+ifernand69,E10069,Imran Fernandes,Finance,ACTIVE,2023-05-22,,2026-04-07
+akapoor70,E10070,Arjun Kapoor,Compliance,ACTIVE,2023-08-25,,2026-09-05
+yfernand71,E10071,Yousef Fernandes,Credit Operations,ACTIVE,2024-12-11,,2026-09-13
+msaleh72,E10072,Mariam Saleh,Payments Operations,ACTIVE,2024-12-24,,2026-09-05
+ishah73,E10073,Imran Shah,Customer Service,ACTIVE,2023-03-07,,2026-09-07
+vshah74,E10074,Vikram Shah,Compliance,ACTIVE,2024-02-22,,2026-09-14
+krahman75,E10075,Khalid Rahman,Payments Operations,ACTIVE,2024-07-09,,2026-09-11
+okhoury76,E10076,Omar Khoury,Customer Service,ACTIVE,2024-03-01,,2026-09-15
+fsaleh77,E10077,Faisal Saleh,Finance,ACTIVE,2023-07-31,,2026-09-02
+mnasser78,E10078,Mariam Nasser,Compliance,ACTIVE,2024-03-06,,2026-09-27
+pshah79,E10079,Priya Shah,Treasury,DISABLED,2025-05-27,2026-04-14,2026-04-13
+smansour80,E10080,Sara Mansour,Finance,ACTIVE,2025-02-22,,2026-09-29
+kmenon81,E10081,Khalid Menon,Compliance,ACTIVE,2024-01-25,,2026-09-19
+frao82,E10082,Faisal Rao,Payments Operations,ACTIVE,2023-01-07,,2026-09-16
+orao83,E10083,Omar Rao,Retail Operations,ACTIVE,2023-11-02,,2026-09-12
+dshah84,E10084,Daniel Shah,Compliance,ACTIVE,2024-02-04,,2026-09-25
+hnasser85,E10085,Hassan Nasser,Credit Operations,ACTIVE,2025-05-05,,2026-09-28
+rrahman86,E10086,Rania Rahman,Treasury,ACTIVE,2024-07-05,,2026-09-14
+nhaddad87,E10087,Noura Haddad,Credit Operations,ACTIVE,2025-01-22,,2026-09-24
+ashah88,E10088,Ahmed Shah,Compliance,ACTIVE,2025-03-30,,2026-09-18
+pnasser89,E10089,Priya Nasser,IT Production Support,ACTIVE,2023-08-14,,2026-09-20
+mrahman90,E10090,Mariam Rahman,Retail Operations,DISABLED,2024-03-22,2026-06-16,2026-06-14
+mdarwish91,E10091,Marco Darwish,Retail Operations,ACTIVE,2023-01-30,,2026-09-16
+ohamdan92,E10092,Omar Hamdan,Compliance,ACTIVE,2023-12-11,,2026-09-13
+rqasim93,E10093,Reem Qasim,Treasury,ACTIVE,2024-11-26,,2026-09-22
+oqasim94,E10094,Omar Qasim,Payments Operations,ACTIVE,2024-02-19,,2026-09-26
+kfarouk95,E10095,Khalid Farouk,Payments Operations,ACTIVE,2023-06-19,,2026-09-24
+iiyer96,E10096,Imran Iyer,Credit Operations,ACTIVE,2024-04-23,,2026-09-27
+rhamdan97,E10097,Rahul Hamdan,Finance,ACTIVE,2023-05-11,,2026-09-30
+llopez98,E10098,Layla Lopez,Retail Operations,DISABLED,2024-02-08,2026-04-15,2026-04-14
+vhamdan99,E10099,Vikram Hamdan,Customer Service,ACTIVE,2024-07-31,,2026-09-19
+scosta100,E10100,Samir Costa,Finance,ACTIVE,2023-01-28,,2026-09-22
+ycosta101,E10101,Yousef Costa,Credit Operations,ACTIVE,2024-10-20,,2026-09-03
+paziz102,E10102,Priya Aziz,Compliance,ACTIVE,2023-05-19,,2026-09-14
+lmenon103,E10103,Lina Menon,Retail Operations,DISABLED,2023-02-21,2026-01-15,2026-01-14
+elopez104,E10104,Elena Lopez,Payments Operations,ACTIVE,2024-01-24,,2026-09-09
+mqasim105,E10105,Mariam Qasim,IT Production Support,ACTIVE,2023-08-05,,2026-09-11
+rmenon106,E10106,Rania Menon,Finance,ACTIVE,2023-12-01,,2026-09-15
+kaziz107,E10107,Karim Aziz,Treasury,ACTIVE,2025-02-18,,2026-09-11
+erao108,E10108,Elena Rao,IT Production Support,ACTIVE,2024-01-24,,2026-09-29
+tqasim109,E10109,Tariq Qasim,Retail Operations,ACTIVE,2025-02-09,,2026-09-09
+asaleh110,E10110,Ahmed Saleh,Treasury,ACTIVE,2024-03-07,,2026-09-27
+ssaleh111,E10111,Sara Saleh,Payments Operations,ACTIVE,2025-05-04,,2026-09-09
+mrao112,E10112,Marco Rao,Treasury,ACTIVE,2024-04-26,,2026-09-03
+saziz113,E10113,Sara Aziz,Finance,ACTIVE,2025-02-06,,2026-09-01
+hdarwish114,E10114,Hind Darwish,Finance,ACTIVE,2023-02-23,,2026-09-18
+icosta115,E10115,Imran Costa,Compliance,ACTIVE,2023-08-18,,2026-09-12
+srahman116,E10116,Sara Rahman,Payments Operations,ACTIVE,2023-03-12,,2026-09-21
+gshah117,E10117,Grace Shah,IT Production Support,ACTIVE,2024-10-29,,2026-09-25
+ohaddad118,E10118,Omar Haddad,Customer Service,DISABLED,2023-07-24,2026-01-24,2026-01-23
+zkapoor119,E10119,Zainab Kapoor,IT Production Support,ACTIVE,2023-01-21,,2026-09-27
+ashah120,E10120,Arjun Shah,Retail Operations,ACTIVE,2023-06-06,,2026-09-20
+rmenon121,E10121,Rahul Menon,Treasury,DISABLED,2024-11-16,2026-09-12,2026-09-09
+arahman122,E10122,Arjun Rahman,Customer Service,ACTIVE,2024-07-31,,2026-09-04
+prahman123,E10123,Priya Rahman,IT Production Support,ACTIVE,2024-04-21,,2026-09-07
+krahman124,E10124,Karim Rahman,Customer Service,ACTIVE,2023-09-20,,2026-09-23
+miyer125,E10125,Mariam Iyer,Payments Operations,ACTIVE,2024-01-13,,2026-09-25
+krao126,E10126,Karim Rao,Credit Operations,ACTIVE,2024-09-12,,2026-09-06
+tkapoor127,E10127,Tariq Kapoor,Finance,ACTIVE,2025-02-04,,2026-09-20
+ffarouk128,E10128,Faisal Farouk,Credit Operations,ACTIVE,2023-04-28,,2026-09-23
+afarouk129,E10129,Aisha Farouk,Customer Service,ACTIVE,2025-04-18,,2026-09-25
+fshah130,E10130,Faisal Shah,Finance,ACTIVE,2023-11-15,,2026-09-06
+batchsvc01,,Batch Service Account,IT Production Support,ACTIVE,2022-03-01,,2026-09-30

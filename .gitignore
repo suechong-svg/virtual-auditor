@@ -1,0 +1,8 @@
+.env
+.venv/
+__pycache__/
+.files/
+audit_workspace/*
+!audit_workspace/.gitkeep
+*.pyc
+.pytest_cache/
