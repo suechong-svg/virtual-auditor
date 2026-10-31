@@ -17,6 +17,7 @@ from claude_agent_sdk import (AssistantMessage, ClaudeSDKClient, ResultMessage, 
 
 from agent import config, sessions
 from agent.agent_factory import build_options
+from agent.approval_text import approval_card
 
 FRIENDLY = {
     "Read": "Reading file", "Grep": "Searching files", "Glob": "Listing files",
@@ -31,24 +32,13 @@ FRIENDLY = {
 }
 
 
-def _summarise_request(tool: str, data: dict) -> str:
-    if tool == "Bash":
-        return f"```\n{data.get('command', '')}\n```"
-    if tool in ("Write", "Edit"):
-        return f"File: `{data.get('file_path')}`"
-    keep = {k: v for k, v in data.items() if k in (
-        "engagement_id", "test_id", "wp_ref", "source_path", "description", "conclusion",
-        "issue_id", "title", "rating", "meeting_title")}
-    return "```json\n" + json.dumps(keep or data, indent=2)[:1500] + "\n```"
-
-
 async def ask_auditor(tool: str, data: dict) -> tuple[bool, str]:
-    """Shown in the chat whenever the agent needs sign-off."""
+    """Shown in the chat whenever the agent needs sign-off. Plain English, not code."""
     res = await cl.AskActionMessage(
-        content=f"**Approval needed: {FRIENDLY.get(tool, tool)}**\n{_summarise_request(tool, data)}",
+        content=approval_card(tool, data),
         actions=[
             cl.Action(name="approve", payload={"ok": True}, label="Approve"),
-            cl.Action(name="reject", payload={"ok": False}, label="Reject"),
+            cl.Action(name="reject", payload={"ok": False}, label="Reject (add a note)"),
         ],
         timeout=900,
     ).send()

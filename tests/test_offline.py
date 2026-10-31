@@ -39,7 +39,14 @@ def test_approval_policy():
     config.AUTONOMY = "review_before_filing"
     assert guardrails.needs_approval("mcp__audit__write_workpaper", {})
     assert not guardrails.needs_approval("Bash", {"command": "python x.py"})
-    assert guardrails.needs_approval("Bash", {"command": "ls"})
+    # Look-only commands are housekeeping: no approval.
+    assert not guardrails.needs_approval("Bash", {"command": "ls"})
+    assert not guardrails.needs_approval("Bash", {"command": "dir audit_workspace"})
+    # Anything else, chained or redirected, still asks.
+    assert guardrails.needs_approval("Bash", {"command": "ls > out.txt"})
+    assert guardrails.needs_approval("Bash", {"command": "ls; node x.js"})
+    assert guardrails.needs_approval("Bash", {"command": "cat $(echo x)"})
+    assert guardrails.needs_approval("Bash", {"command": "node x.js"})
     config.AUTONOMY = "autonomous"
     assert not guardrails.needs_approval("mcp__audit__write_workpaper", {})
     config.AUTONOMY = "review_before_filing"
@@ -108,3 +115,21 @@ def test_session_registry_and_user_in_log():
     guardrails.log_event({"type": "test"})
     last = config.ACTIVITY_LOG.read_text().strip().splitlines()[-1]
     assert '"user"' in last and '"agent": "virtual-auditor"' in last
+
+
+def test_approval_cards_are_plain_english():
+    from agent.approval_text import approval_card
+    wp = approval_card("mcp__audit__write_workpaper", {
+        "wp_ref": "WP-AC-02", "test_id": "CB-AC-02", "conclusion": "Ineffective",
+        "results": "3 of 16 leavers not disabled on time",
+        "exceptions": [{"user_id": "u1", "issue": "login | after exit"}] * 12,
+        "evidence_refs": ["EV-CB_AC_02-01"]})
+    assert "Workpaper ready for review" in wp and "Ineffective" in wp
+    assert "Exceptions:** 12" in wp and "2 more in the workpaper" in wp
+    assert "```" not in wp and "{" not in wp  # no code or JSON on the card
+    iss = approval_card("mcp__audit__log_issue", {"issue_id": "ISS-01", "title": "Leavers", "rating": "High"})
+    assert "Draft issue to log" in iss and "**Rating:** High" in iss
+    ev = approval_card("mcp__audit__file_evidence", {"test_id": "CB-AC-02",
+                       "source_path": "C:/x/hr_leavers.csv", "description": "HR list"})
+    assert "hr_leavers.csv" in ev and "C:/x" not in ev
+    assert "System command" in approval_card("Bash", {"command": "node x.js"})

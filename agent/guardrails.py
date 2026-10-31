@@ -56,6 +56,13 @@ BLOCKED_SHELL = re.compile(
     re.I,
 )
 
+# Look-only shell commands (list folders, peek at a file). Auto-approved so the
+# auditor is not asked about housekeeping. Anything chained, redirected or
+# substituted still needs approval, and the hard rules above still apply.
+SAFE_LOOKUP = re.compile(
+    r"^(ls|dir|pwd|cat|head|tail|wc|type|tree|get-childitem|get-content|gci|gc)(\s|$)", re.I)
+SHELL_CONTROL = re.compile(r"[;&|<>`]|\$\(")
+
 PATH_KEYS = ("file_path", "path", "notebook_path")
 
 
@@ -163,7 +170,11 @@ def needs_approval(tool: str, tool_input: dict[str, Any]) -> bool:
         return True
     if tool == "Bash":
         cmd = str(tool_input.get("command", "")).strip().lower()
-        return not re.match(r"^(python|python3|py)\b", cmd)
+        if re.match(r"^(python|python3|py)\b", cmd):
+            return False
+        if SAFE_LOOKUP.match(cmd) and not SHELL_CONTROL.search(cmd):
+            return False
+        return True
     return False
 
 
