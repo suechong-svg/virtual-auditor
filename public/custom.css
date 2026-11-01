@@ -1,0 +1,133 @@
+/* Virtual Auditor: Wio Internal Audit look
+   Brand: #5500F9 (Wio purple), #F4D3CE (blush), #14123A (navy) */
+
+:root {
+  --wio-purple: #5500F9;
+  --wio-purple-deep: #3A00B0;
+  --wio-blush: #F4D3CE;
+  --wio-navy: #14123A;
+  --wio-lavender: #EEE8FF;
+}
+
+/* Page: soft lavender wash with a hint of blush */
+body {
+  background:
+    radial-gradient(1200px 500px at 100% 0%, rgba(244, 211, 206, 0.35), transparent 60%),
+    radial-gradient(900px 500px at 0% 100%, rgba(85, 0, 249, 0.06), transparent 60%),
+    hsl(var(--background));
+}
+
+/* Header: Wio purple band, like the top of the app */
+#header {
+  background: linear-gradient(100deg, var(--wio-navy) 0%, #2B138F 45%, var(--wio-purple) 100%);
+  color: #fff;
+  box-shadow: 0 2px 12px rgba(20, 18, 58, 0.18);
+}
+#header button,
+#header a,
+#header svg {
+  color: #fff !important;
+}
+#header button:hover,
+#header a:hover {
+  background: rgba(255, 255, 255, 0.14) !important;
+}
+/* Title in the empty centre slot of the header */
+#header > div:nth-child(3)::before {
+  content: "Virtual Auditor  \00B7  Wio Internal Audit";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+  color: #fff;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+/* Agent messages: white card with a blush edge */
+.ai-message .message-content {
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  border-left: 3px solid var(--wio-blush);
+  border-radius: 4px 18px 18px 18px;
+  padding: 12px 16px;
+  box-shadow: 0 1px 6px rgba(20, 18, 58, 0.05);
+}
+
+/* Agent avatar: larger, with a purple ring */
+.ai-message > span:first-child img,
+.ai-message > span:first-child span {
+  border-radius: 9999px;
+}
+.ai-message > span:first-child > span {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px rgba(85, 0, 249, 0.55);
+}
+
+/* User messages: solid Wio purple bubble */
+div.px-5.bg-accent.rounded-3xl {
+  background: linear-gradient(135deg, var(--wio-purple) 0%, var(--wio-purple-deep) 100%) !important;
+  color: #fff;
+}
+div.px-5.bg-accent.rounded-3xl a { color: #fff; text-decoration: underline; }
+
+/* Action buttons (Approve / Reject / Resume / New session) */
+.ai-message div.flex-wrap > button.px-3 {
+  height: auto;
+  min-height: 38px;
+  margin: 2px 6px 2px 0;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  border: 1.5px solid var(--wio-purple);
+  background: #fff;
+  color: var(--wio-purple) !important;
+  font-weight: 600;
+  white-space: normal;
+  text-align: left;
+}
+.ai-message div.flex-wrap > button.px-3:hover {
+  background: var(--wio-purple) !important;
+  color: #fff !important;
+}
+.ai-message div.flex-wrap > button.px-3:first-child {
+  background: var(--wio-purple);
+  color: #fff !important;
+}
+.ai-message div.flex-wrap > button.px-3:first-child:hover {
+  background: var(--wio-purple-deep) !important;
+}
+
+/* Message composer */
+#message-composer {
+  background: #fff !important;
+  border: 1px solid hsl(var(--border));
+  box-shadow: 0 4px 18px rgba(85, 0, 249, 0.08);
+}
+#message-composer:focus-within {
+  border-color: var(--wio-purple);
+}
+#chat-submit {
+  background: var(--wio-purple) !important;
+  color: #fff !important;
+}
+
+/* Starter cards */
+#starters button {
+  border-radius: 16px !important;
+  border: 1px solid hsl(var(--border));
+  background: #fff;
+}
+#starters button:hover {
+  border-color: var(--wio-purple);
+  background: var(--wio-lavender);
+}
+
+/* Dark mode overrides for the white surfaces above */
+.dark #message-composer { background: hsl(var(--card)) !important; }
+.dark #starters button { background: hsl(var(--card)); }
+.dark .ai-message div.flex-wrap > button.px-3:not(:first-child) { background: transparent; color: #B99CFF !important; border-color: #8C5CFF; }
+.dark .ai-message > span:first-child > span {
+  box-shadow: 0 0 0 2px hsl(var(--background)), 0 0 0 4px rgba(140, 90, 255, 0.7);
+}
